@@ -24,11 +24,10 @@ const StyledNavigation = styled.div`
   // Code logic for positioning fixed in all web app + header config
   position: fixed;
   background: transparent;
+  color: var(--color-tan);
   width: var(--width-full-window);
   z-index: var(--z-top);
   height: var(--height-navigation);
-  font-size: var(--font-xxxsmall);
-  color: var(--color-tan);
 `;
 
 const Object = styled.div`
@@ -38,12 +37,8 @@ const Object = styled.div`
 const Link = styled.a``;
 
 const Logo = styled.img`
-  height: var(--font-medium);
-  padding-left: var(--padding-xxsmall);
-
-  @media (min-width: 61.25em) {
-    padding: 0 var(--padding-medium) 0 0;
-  }
+  height: var(--font-large);
+  padding-top: var(--padding-medium);
 `;
 
 const Menu = styled.button`
@@ -53,6 +48,8 @@ const Menu = styled.button`
   width: 40px; /* Adjust the width as needed */
   height: 40px; /* Adjust the height as needed */
   cursor: pointer;
+  font-size: var(--font-xsmall);
+  padding-right: var(--padding-large);
 
   ::before,
   ::after {
@@ -138,7 +135,7 @@ function Navigation() {
         </Object>
         <Object>
           {/* <!-- Menu Container for links --> */}
-          <Menu onClick={toggleMenu}> {isMenuOpen ? 'Exit' : 'Menu'}</Menu>
+          <Menu onClick={toggleMenu}> {isMenuOpen ? 'Close' : 'Menu'}</Menu>
         </Object>
       </StyledNavigation>
       <MenuContainer isOpen={isMenuOpen}>
