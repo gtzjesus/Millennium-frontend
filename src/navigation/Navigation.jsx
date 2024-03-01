@@ -37,8 +37,8 @@ const Object = styled.div`
 const Link = styled.a``;
 
 const Logo = styled.img`
-  height: var(--font-large);
-  padding-top: var(--padding-medium);
+  height: var(--font-xlarge);
+  padding-top: var(--padding-large);
 `;
 
 const Menu = styled.button`
@@ -49,7 +49,7 @@ const Menu = styled.button`
   height: 40px; /* Adjust the height as needed */
   cursor: pointer;
   font-size: var(--font-xsmall);
-  padding-right: var(--padding-large);
+  padding-right: var(--padding-xlarge);
 
   ::before,
   ::after {
