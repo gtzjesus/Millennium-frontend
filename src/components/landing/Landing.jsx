@@ -1,7 +1,7 @@
 // ------------------------------
-// File: Home.jsx
+// File: Landing.jsx
 // ------------------------------
-// Description: React Home Page (we call all components here).
+// Description: React Landing Component.
 // ------------------------------
 
 // ------------------------------
@@ -9,33 +9,26 @@
 // ------------------------------
 // This section has all necessary imports for this component.
 import styled from 'styled-components';
-import Landing from '../../components/landing/Landing';
 
 // ------------------------------
 // Styled Componenets
 // ------------------------------
 // This section has all CSS styles configured for every HTML element.
-const ResponsiveContainer = styled.div`
-  // Responsive code logic
-  @media (min-width: 768px) {
-    max-width: 600px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 20px;
-  }
-`;
+const StyledLanding = styled.div`
+  // Code logic for setting the background
+  // Design background from Figma software
+  background: url('backgrounds/elpaso.jpg');
+  background-size: cover;
 
+  // Code logic for covering full-screen devices
+  min-height: 100vh;
+`;
 // ------------------------------
 // Component
 // ------------------------------
 // This section has our React Component which handles the hook data
-function Home() {
-  return (
-    <>
-      <ResponsiveContainer>
-        <Landing />
-      </ResponsiveContainer>
-    </>
-  );
+function Landing() {
+  return <StyledLanding></StyledLanding>;
 }
 
-export default Home;
+export default Landing;
