@@ -10,6 +10,7 @@
 // This section has all necessary imports for this component.
 import styled from 'styled-components';
 import Landing from '../../components/landing/Landing';
+import Navigation from '../../navigation/Navigation';
 
 // ------------------------------
 // Styled Componenets
@@ -31,9 +32,9 @@ const ResponsiveContainer = styled.div`
 function Home() {
   return (
     <>
-      <ResponsiveContainer>
-        <Landing />
-      </ResponsiveContainer>
+      <Navigation />
+      <Landing />
+      <ResponsiveContainer></ResponsiveContainer>
     </>
   );
 }

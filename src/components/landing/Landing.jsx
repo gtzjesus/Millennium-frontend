@@ -15,13 +15,12 @@ import styled from 'styled-components';
 // ------------------------------
 // This section has all CSS styles configured for every HTML element.
 const StyledLanding = styled.div`
-  // Code logic for setting the background
-  // Design background from Figma software
   background: url('backgrounds/elpaso.jpg');
   background-size: cover;
-
-  // Code logic for covering full-screen devices
   min-height: 100vh;
+
+  /* Position the background slightly to the left */
+  background-position: center left; /* You can adjust the positioning as needed */
 `;
 // ------------------------------
 // Component
