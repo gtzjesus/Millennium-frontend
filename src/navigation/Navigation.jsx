@@ -28,7 +28,6 @@ const StyledNavigation = styled.div`
   width: var(--width-full-window);
   z-index: var(--z-top);
   height: var(--height-navigation);
-  /* padding-top: var(--padding-small); */
 `;
 
 const Object = styled.div``;
@@ -37,10 +36,14 @@ const Link = styled.a``;
 
 const Logo = styled.img`
   height: var(--font-large);
+  padding-top: var(--padding-large);
+  padding-left: var(--padding-xsmall);
 `;
 
 const MenuImg = styled.img`
   height: var(--menu-height);
+  padding-top: var(--padding-small);
+  padding-right: var(--padding-xsmall);
 `;
 
 const Menu = styled.button`
