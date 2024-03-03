@@ -21,13 +21,31 @@ const StyledLanding = styled.div`
 
   /* Position the background slightly to the left */
   background-position: center left; /* You can adjust the positioning as needed */
+
+  // Position object to the center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Title = styled.span`
+  font-size: var(--font-large);
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
 `;
 // ------------------------------
 // Component
 // ------------------------------
 // This section has our React Component which handles the hook data
 function Landing() {
-  return <StyledLanding></StyledLanding>;
+  return (
+    <StyledLanding>
+      <Title>
+        Millennium <br /> 2000
+      </Title>
+    </StyledLanding>
+  );
 }
 
 export default Landing;
