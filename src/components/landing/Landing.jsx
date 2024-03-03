@@ -41,7 +41,7 @@ const Title = styled.span`
 `;
 
 const SubTitle = styled.span`
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
@@ -55,7 +55,7 @@ function Landing() {
     <StyledLanding>
       <LandingIntroduction>
         <Title>Millennium 2000</Title>
-        <SubTitle>El Paso, TX</SubTitle>
+        <SubTitle>real estate company based in El Paso, TX</SubTitle>
       </LandingIntroduction>
     </StyledLanding>
   );
