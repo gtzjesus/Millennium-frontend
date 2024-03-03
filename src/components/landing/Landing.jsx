@@ -25,14 +25,14 @@ const StyledLanding = styled.div`
   // Position object to the center
   display: flex;
   justify-content: center;
-  align-items: center;
 `;
 
 const Title = styled.span`
-  font-size: var(--font-large);
+  font-size: var(--font-xlarge);
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
+  padding-top: var(--padding-xxxlarge);
 `;
 // ------------------------------
 // Component
