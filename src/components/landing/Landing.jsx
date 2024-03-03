@@ -18,18 +18,31 @@ const StyledLanding = styled.div`
   background: url('backgrounds/elpaso.jpg');
   background-size: cover;
   min-height: 100vh;
+  position: relative; /* Add position relative for overlay */
+  overflow: hidden; /* Ensure overlay doesn't overflow */
+`;
 
-  /* Position the background slightly to the left */
-  background-position: center left; /* You can adjust the positioning as needed */
-
-  // Position object to the center
-  display: flex;
-  justify-content: center;
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity (last value) as needed */
 `;
 
 const LandingIntroduction = styled.div`
+  position: relative; /* Ensure content is stacked on top of the overlay */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Ensure content is above the overlay */
 `;
 
 const Title = styled.span`
@@ -39,6 +52,7 @@ const Title = styled.span`
   text-align: center;
   padding-top: var(--padding-xxlarge);
   line-height: 3.75rem;
+  color: white; /* Set text color */
 `;
 
 const SubTitle = styled.span`
@@ -47,6 +61,7 @@ const SubTitle = styled.span`
   margin: 0 auto;
   text-align: center;
   padding-top: var(--padding-small);
+  color: white; /* Set text color */
 `;
 // ------------------------------
 // Component
@@ -55,10 +70,12 @@ const SubTitle = styled.span`
 function Landing() {
   return (
     <StyledLanding>
-      <LandingIntroduction>
-        <Title>Millennium 2000</Title>
-        <SubTitle>real estate company based in El Paso, TX</SubTitle>
-      </LandingIntroduction>
+      <Overlay>
+        <LandingIntroduction>
+          <Title>Millennium 2000</Title>
+          <SubTitle>real estate company based in El Paso, TX</SubTitle>
+        </LandingIntroduction>
+      </Overlay>
     </StyledLanding>
   );
 }
