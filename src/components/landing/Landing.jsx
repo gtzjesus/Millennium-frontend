@@ -32,7 +32,7 @@ const Overlay = styled.div`
     0,
     0,
     0,
-    0.5
+    0.3
   ); /* Adjust the opacity (last value) as needed */
 `;
 
