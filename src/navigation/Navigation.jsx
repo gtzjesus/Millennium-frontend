@@ -30,15 +30,16 @@ const StyledNavigation = styled.div`
   height: var(--height-navigation);
 `;
 
-const Object = styled.div`
-  padding: 0 var(--padding-small);
-`;
+const Object = styled.div``;
 
 const Link = styled.a``;
 
 const Logo = styled.img`
-  height: var(--font-xlarge);
-  padding-top: var(--padding-large);
+  height: var(--font-large);
+`;
+
+const MenuImg = styled.img`
+  height: var(--font-small);
 `;
 
 const Menu = styled.button`
@@ -49,7 +50,6 @@ const Menu = styled.button`
   height: 40px; /* Adjust the height as needed */
   cursor: pointer;
   font-size: var(--font-xsmall);
-  padding-right: var(--padding-xlarge);
 
   ::before,
   ::after {
@@ -135,7 +135,14 @@ function Navigation() {
         </Object>
         <Object>
           {/* <!-- Menu Container for links --> */}
-          <Menu onClick={toggleMenu}> {isMenuOpen ? 'Close' : 'Menu'}</Menu>
+          <Menu onClick={toggleMenu}>
+            {' '}
+            {isMenuOpen ? (
+              'Close'
+            ) : (
+              <MenuImg src="/icons/menu.png" alt="Menu"></MenuImg>
+            )}
+          </Menu>
         </Object>
       </StyledNavigation>
       <MenuContainer isOpen={isMenuOpen}>
