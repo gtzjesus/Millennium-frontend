@@ -38,10 +38,11 @@ const Title = styled.span`
   margin: 0 auto;
   text-align: center;
   padding-top: var(--padding-xxlarge);
+  line-height: 3.75rem;
 `;
 
 const SubTitle = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxsmall);
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
