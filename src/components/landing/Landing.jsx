@@ -27,12 +27,24 @@ const StyledLanding = styled.div`
   justify-content: center;
 `;
 
+const LandingIntroduction = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Title = styled.span`
   font-size: var(--font-xlarge);
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
   padding-top: var(--padding-xxlarge);
+`;
+
+const SubTitle = styled.span`
+  font-size: var(--font-small);
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
 `;
 // ------------------------------
 // Component
@@ -41,9 +53,10 @@ const Title = styled.span`
 function Landing() {
   return (
     <StyledLanding>
-      <Title>
-        Millennium <br /> 2000
-      </Title>
+      <LandingIntroduction>
+        <Title>Millennium 2000</Title>
+        <SubTitle>El Paso, TX</SubTitle>
+      </LandingIntroduction>
     </StyledLanding>
   );
 }
