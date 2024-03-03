@@ -28,6 +28,7 @@ const StyledNavigation = styled.div`
   width: var(--width-full-window);
   z-index: var(--z-top);
   height: var(--height-navigation);
+  /* padding-top: var(--padding-small); */
 `;
 
 const Object = styled.div``;
@@ -39,7 +40,7 @@ const Logo = styled.img`
 `;
 
 const MenuImg = styled.img`
-  height: var(--font-small);
+  height: var(--menu-height);
 `;
 
 const Menu = styled.button`
@@ -89,7 +90,7 @@ const MenuContainer = styled.div`
   left: ${({ isOpen }) => (isOpen ? '0' : '100%')}; /* Adjusted left property */
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
   transition: left 0.3s ease-in-out;
   z-index: 999;
 `;
@@ -136,11 +137,12 @@ function Navigation() {
         <Object>
           {/* <!-- Menu Container for links --> */}
           <Menu onClick={toggleMenu}>
-            {' '}
             {isMenuOpen ? (
-              'Close'
+              <MenuImg src="/icons/close.png" alt="Close"></MenuImg>
             ) : (
-              <MenuImg src="/icons/menu.png" alt="Menu"></MenuImg>
+              <>
+                <MenuImg src="/icons/menu.png" alt="Menu"></MenuImg>
+              </>
             )}
           </Menu>
         </Object>
