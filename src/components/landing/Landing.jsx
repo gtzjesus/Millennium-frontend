@@ -46,6 +46,7 @@ const SubTitle = styled.span`
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
+  padding-top: var(--padding-small);
 `;
 // ------------------------------
 // Component
