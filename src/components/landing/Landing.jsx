@@ -68,7 +68,7 @@ const SubTitle = styled.span`
 const ButtonArea = styled.div`
   display: flex;
   justify-content: center;
-  padding: var(--padding-xxxlarge) 0;
+  padding: 50% 0;
 `;
 // ------------------------------
 // Component
