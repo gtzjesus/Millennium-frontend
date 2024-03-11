@@ -68,7 +68,7 @@ const SubTitle = styled.span`
 const ButtonArea = styled.div`
   display: flex;
   justify-content: center;
-  padding: 10rem;
+  padding: var(--padding-giant) 0;
 `;
 // ------------------------------
 // Component
@@ -83,11 +83,11 @@ function Landing() {
             <Title>Millennium 2000</Title>
             <SubTitle>real estate company based in El Paso, TX</SubTitle>
           </LandingIntroduction>
+          <ButtonArea>
+            <Button>click to Explore local real estate</Button>
+          </ButtonArea>
         </Overlay>
       </StyledLanding>
-      <ButtonArea>
-        <Button>Explore local real estate</Button>
-      </ButtonArea>
     </>
   );
 }

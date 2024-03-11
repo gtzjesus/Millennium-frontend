@@ -44,8 +44,6 @@ const variations = {
 // ------------------------------
 // This section has all CSS styles configured for this HTML element.
 const Button = styled.button`
-  position: absolute;
-  bottom: 0;
   border: none;
   cursor: pointer;
   border-radius: 5px;
