@@ -11,6 +11,7 @@
 import styled from 'styled-components';
 import Landing from '../../components/landing/Landing';
 import Navigation from '../../navigation/Navigation';
+import Realtors from '../../components/realtors/Realtors';
 
 // ------------------------------
 // Styled Componenets
@@ -34,7 +35,9 @@ function Home() {
     <>
       <Navigation />
       <Landing />
-      <ResponsiveContainer></ResponsiveContainer>
+      <ResponsiveContainer>
+        <Realtors />
+      </ResponsiveContainer>
     </>
   );
 }

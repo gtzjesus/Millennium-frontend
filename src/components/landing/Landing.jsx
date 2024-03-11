@@ -9,6 +9,7 @@
 // ------------------------------
 // This section has all necessary imports for this component.
 import styled from 'styled-components';
+import Button from '../../ui/buttons/Button';
 
 // ------------------------------
 // Styled Componenets
@@ -63,20 +64,31 @@ const SubTitle = styled.span`
   padding-top: var(--padding-small);
   color: white; /* Set text color */
 `;
+
+const ButtonArea = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 10rem;
+`;
 // ------------------------------
 // Component
 // ------------------------------
 // This section has our React Component which handles the hook data
 function Landing() {
   return (
-    <StyledLanding>
-      <Overlay>
-        <LandingIntroduction>
-          <Title>Millennium 2000</Title>
-          <SubTitle>real estate company based in El Paso, TX</SubTitle>
-        </LandingIntroduction>
-      </Overlay>
-    </StyledLanding>
+    <>
+      <StyledLanding>
+        <Overlay>
+          <LandingIntroduction>
+            <Title>Millennium 2000</Title>
+            <SubTitle>real estate company based in El Paso, TX</SubTitle>
+          </LandingIntroduction>
+        </Overlay>
+      </StyledLanding>
+      <ButtonArea>
+        <Button>Explore local real estate</Button>
+      </ButtonArea>
+    </>
   );
 }
 
